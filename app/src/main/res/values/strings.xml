@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sample Display Overlay</string>
+    <string name="sample_display_overlay">Sample Display Overlay</string>
+    <string name="appicon">AppIcon</string>
+    <string name="defaultsetting">DefaultSetting</string>
+    <string name="flug_secure">FLUG SECURE</string>
+    <string name="splash_overlay">SPLASH OVERLAY</string>
+</resources>
