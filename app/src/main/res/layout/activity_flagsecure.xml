@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".DefaultActivity">
+        tools:context=".FlagSecureActivity">
 
     <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
@@ -30,7 +30,7 @@
     <TextView
             android:layout_width="0dp"
             android:layout_height="?attr/actionBarSize"
-            android:text="@string/default_setting"
+            android:text="@string/flag_secure_title"
             android:textSize="20sp"
             android:gravity="center"
             app:layout_constraintTop_toTopOf="parent"
@@ -55,7 +55,7 @@
             android:id="@+id/image"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:src="@drawable/default_sample"
+            android:src="@drawable/flagsecure_sample"
             android:layout_margin="8dp"
             android:scaleType="fitStart"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
@@ -68,7 +68,7 @@
     <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/default_name"
+            android:text="@string/flag_secure_name"
             android:textSize="15sp"
             android:gravity="center"
             app:layout_constraintStart_toEndOf="@id/image"

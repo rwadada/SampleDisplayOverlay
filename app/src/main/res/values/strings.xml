@@ -9,4 +9,6 @@
     <string name="default_setting">DEFAULT SETTING</string>
     <string name="description_default">画面サンプル</string>
     <string name="default_name">デフォルトの状態での画面</string>
+    <string name="flag_secure_name">FLAG_SECUREを設定した場合の画面</string>
+    <string name="flag_secure_title">FLAG SECURE</string>
 </resources>

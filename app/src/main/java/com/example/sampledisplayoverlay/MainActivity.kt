@@ -48,6 +48,12 @@ class MainActivity : AppCompatActivity() {
                 Intent(this, DefaultActivity::class.java)
             )
         }
+
+        button2.setOnClickListener {
+            startActivity(
+                Intent(this, FlagSecureActivity::class.java)
+            )
+        }
     }
 
     private fun visibleAllButton(buttonList: List<Button>) {
