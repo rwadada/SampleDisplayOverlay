@@ -5,4 +5,8 @@
     <string name="defaultsetting">DefaultSetting</string>
     <string name="flug_secure">FLUG SECURE</string>
     <string name="splash_overlay">SPLASH OVERLAY</string>
+    <string name="right_arrow">\ \ ＜</string>
+    <string name="default_setting">DEFAULT SETTING</string>
+    <string name="description_default">画面サンプル</string>
+    <string name="default_name">デフォルトの状態での画面</string>
 </resources>

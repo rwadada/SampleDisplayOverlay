@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onAnimationEnd(p0: Animation?) {
                 view.visibility = View.GONE
-                val buttonList = listOf<Button>(button1, button2, button3)
+                val buttonList = listOf(button1, button2, button3)
                 visibleAllButton(buttonList)
 
             }
@@ -42,6 +42,12 @@ class MainActivity : AppCompatActivity() {
         })
 
         view.startAnimation(anim)
+
+        button1.setOnClickListener{
+            startActivity(
+                Intent(this, DefaultActivity::class.java)
+            )
+        }
     }
 
     private fun visibleAllButton(buttonList: List<Button>) {
