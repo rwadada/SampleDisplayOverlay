@@ -14,22 +14,23 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
+
         window.addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN)
         val context:Context = this
 
         val view: View = findViewById(R.id.splash)
 
-        val anim = AlphaAnimation(1f, 0f)
-        anim.duration = 3000
+        val anim = AlphaAnimation(1f, 1f)
+        anim.duration = 1000
         anim.setAnimationListener(object : Animation.AnimationListener{
             override fun onAnimationStart(p0: Animation?) {
                 // NOP
             }
 
             override fun onAnimationEnd(p0: Animation?) {
-                view.visibility = View.INVISIBLE
                 val intent = Intent(context, MainActivity::class.java)
                 startActivity(intent)
+                overridePendingTransition(0, 0)
                 finish()
             }
 
