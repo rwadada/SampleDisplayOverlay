@@ -54,6 +54,12 @@ class MainActivity : AppCompatActivity() {
                 Intent(this, FlagSecureActivity::class.java)
             )
         }
+
+        button3.setOnClickListener {
+            startActivity(
+                Intent(this, SplashOverlayActivity::class.java)
+            )
+        }
     }
 
     private fun visibleAllButton(buttonList: List<Button>) {
