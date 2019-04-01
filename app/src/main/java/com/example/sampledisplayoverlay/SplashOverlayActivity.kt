@@ -34,13 +34,13 @@ class SplashOverlayActivity : AppCompatActivity() {
         }
     }
 
-    override fun onUserLeaveHint() {
-        super.onUserLeaveHint()
+    override fun onStop() {
         val splash: View = findViewById(R.id.splash)
         splash.visibility = View.VISIBLE
 
         val backBtn: Button = findViewById(R.id.back_btn)
         backBtn.visibility = View.INVISIBLE
+        super.onStop()
     }
 
     override fun onRestart() {
