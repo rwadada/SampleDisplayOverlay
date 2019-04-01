@@ -1,6 +1,5 @@
 package com.example.sampledisplayoverlay
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
@@ -34,13 +33,12 @@ class SplashOverlayActivity : AppCompatActivity() {
         }
     }
 
-    override fun onStop() {
+    override fun onUserLeaveHint() {
         val splash: View = findViewById(R.id.splash)
         splash.visibility = View.VISIBLE
 
         val backBtn: Button = findViewById(R.id.back_btn)
         backBtn.visibility = View.INVISIBLE
-        super.onStop()
     }
 
     override fun onRestart() {
